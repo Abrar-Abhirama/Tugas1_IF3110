@@ -7,28 +7,45 @@ body {
 /* navbar */
 
 .navbar {
-  background-color: aqua;
-  width: 100%;
-  height: 60px;
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: row;
-  gap: 20px;
-  margin-right: 2px;
-  box-sizing: border-box;
-  padding-right: 32px;
-  padding-top: 18px;
-  /* padding-bottom: px; */
-  position: fixed;
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 20px;
+    margin-right: 2px;
+    box-sizing: border-box;
+    padding-right: 32px;
+    padding-top: 18px;
+    /* padding-bottom: px; */
+    position: fixed;
+    z-index: 9999;
 }
 
 .home-navbar {
-    color : black;
+    color : rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.education-navbar {
+    color : rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.experience-navbar {
+    color : rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.contact-navbar {
+    color : rgb(0, 0, 0);
+    font-weight: bold;
 }
 
 /* homepage */
 .home {
-    background-color: aquamarine;
+    background-color: rgb(255, 255, 255);
     width: 100%;
     height: 100%;
     display: flex;
@@ -36,29 +53,79 @@ body {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    padding-top: 70px;
+    /* padding-top: 70px; */
+    /* padding-left: 20px; */
+    padding-bottom: 10px;
 }
 
 .about {
-    background-color: rgb(188, 215, 209);
-    width: 50%;
-    height: 80%;
+    /* background: rgba(255, 255, 255); */
+    width: 65%;
+    box-sizing: border-box;
+    display: flex;
+    max-width: 500px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 18px;
+    padding: 36px 32px;
+}
+
+.about h1 {
+    color: #232526;
+    font-size: 2.2em;
+    font-weight: bold;
+    margin: 0 0 0.2em 0;
+    letter-spacing: 1px;
+}
+
+.about h3 {
+    color: #414345;
+    font-size: 1.15em;
+    font-weight: normal;
+    margin: 0.5em 0 0 0;
+    word-break: break-word;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    line-height: 1.6;
+}
+
+.about p {
+    color: #232526;
+    font-size: 1em;
+    margin: 0.5em 0 0 0;
+    line-height: 1.7;
 }
 
 .photo {
-    background-color: rgb(1, 99, 75);
+    background-color: rgb(255, 255, 255);
     width: 50%;
     height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .back {
-    background-color: black;
-    width: 90%;
-    height: 80%;
+    background-color: rgb(118, 71, 71);
+    width: 70%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    border-radius: 300px;
+}
+
+.photo-img {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 90%; 
+    border-radius: 1000px;
+     
 }
 
 @media (max-width: 768px) {
@@ -86,7 +153,7 @@ body {
 }
 
 .education-title {
-    color:black;
+    color:rgb(255, 255, 255);
     margin-top: 0px;
 }
 
@@ -228,7 +295,8 @@ body {
     text-decoration: none;
     outline: none;
 }
-/* Responsive: home section stack, photo on top */
+
+
 @media (max-width: 768px) {
     .home {
         flex-direction: column-reverse;
