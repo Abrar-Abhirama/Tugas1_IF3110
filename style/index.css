@@ -219,48 +219,110 @@ body {
 
 /* Experience */
 .Experience {
-    background-color: aquamarine;
+    background-color: rgb(255, 255, 255);
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
+    padding: 40px 0 40px 0; 
+    box-sizing: border-box;
 }
+
 .experience-title {
     color:black;
     margin-top: 0px;
 }
 
 .list-experience {
-    background-color: aqua;
-    height: 80%;
-    width: 70%;
+    background-color: rgb(255, 255, 255);
+    /* Hapus height: 80%; */
+    width: 90%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 20px;
+    padding: 24px 0;
+    box-sizing: border-box;
+    overflow-x: auto; 
 }
 
 .experiences {
     background-color: rgb(42, 46, 46);
-    height: 90%;
     width: 70%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 20px;
+    padding: 16px;
+    box-sizing: border-box;
+    overflow-x: auto;
+    border-radius: 12px;
 }
 
 .vertical-divider {
-    width: 2px;           
-    height: 90%;        
-    background: #888;  
-    margin: 0 16px;     
-    display: inline-block;
+    width: 4px;
+    min-width: 4px;
+    background: linear-gradient(to bottom, #000000 0%, #232526 100%);
+    border-radius: 2px;
+    margin: 0 24px;
+   
+    align-self: stretch;
+}
+
+.experience-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    box-sizing: border-box;
+}
+
+.experience-item {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 18px 16px;
+    min-width: 220px;
+    max-width: 320px;
+    flex: 1 0 220px;
+    box-sizing: border-box;
+    color: #232526;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    word-break: break-word;
+}
+
+.experience-item h3 {
+    font-size: 1.05em;
+    margin: 0 0 0.4em 0;
+    color: #232526;
+}
+
+.experience-item p {
+    margin: 0;
+    color: #414345;
+    font-size: 0.98em;
+    line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+    .experience-grid {
+        flex-direction: column;
+        overflow-x: unset;
+        gap: 16px;
+    }
+    .experience-item {
+        max-width: 100%;
+        min-width: 0;
+        width: 100%;
+    }
 }
 
 /* Contact */
@@ -286,7 +348,6 @@ body {
 .contact-icon {
     width: 32px;
     height: 32px;
-  
     transition: transform 0.2s;
 }
 
