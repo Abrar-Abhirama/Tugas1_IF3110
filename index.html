@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <link rel="stylesheet" href = "style/index.css">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div class = "navbar"> 
+            <span class = "home-navbar" onClick="document.getElementById('homepage').scrollIntoView();"> Home </span>
+            <span class = "education-navbar" onClick="document.getElementById('educationpage').scrollIntoView();"> Education </span>
+            <span class = "experience-navbar" onClick="document.getElementById('experiencepage').scrollIntoView();"> Experience </span>
+            <span class = "contact-navbar" onClick="document.getElementById('contactpage').scrollIntoView();"> Contact </span>
+        </div>
+
+        <!-- Home -->
+        <div class = "home", id = "homepage">
+            <div class = "about"></div>
+            <div class = "photo">
+                <div class = "back"></div>
+            </div>
+        </div>
+
+        <!-- education -->
+        <div class = "education", id = "educationpage">
+            <h1 class = "education-title">Education</h1>
+            <div class = "list-education"> 
+                <div class = "highschool"> </div>
+                <hr class="section-divider">
+                <div class = "college"> </div>
+            </div>
+        </div>
+
+        <!-- experience -->
+        <div class = "experience", id = "experiencepage">
+            <h1 class = "experience-title">Experience</h1>
+            <div class = "list-experience"> 
+                <div class = "experiences"> </div>
+                <div class = "vertical-divider"></div>
+                <div class = "experiences"> </div>
+            </div>
+        </div>
+
+        <!-- contact -->
+        <div class = "contact", id = "contactpage">
+            <div class="contact-icons">
+                <a href="https://wa.me/081322476348" target="_blank" class="contact-link">
+                    <img src="images/whatsapp.png" alt="WhatsApp" class="contact-icon-whatsapp">
+                    <span class="contact-label">WhatsApp</span>
+                </a>
+                <a href="https://instagram.com/abrar.a.w" target="_blank" class="contact-link">
+                    <img src="images/instagram.png" alt="Instagram" class="contact-icon">
+                    <span class="contact-label">Instagram</span>
+                </a>
+                <a href="https://www.linkedin.com/in/abrar-abhirama" target="_blank" class="contact-link">
+                    <img src="images/linkedin.png" alt="LinkedIn" class="contact-icon">
+                    <span class="contact-label">LinkedIn</span>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
