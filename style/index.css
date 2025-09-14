@@ -41,13 +41,13 @@ body {
 
 .about {
     background-color: rgb(188, 215, 209);
-    width: 60%;
+    width: 50%;
     height: 80%;
 }
 
 .photo {
     background-color: rgb(1, 99, 75);
-    width: 40%;
+    width: 50%;
     height: 80%;
     display: flex;
     flex-direction: column;
