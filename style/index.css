@@ -237,7 +237,6 @@ body {
 
 .list-experience {
     background-color: rgb(255, 255, 255);
-    /* Hapus height: 80%; */
     width: 90%;
     display: flex;
     flex-direction: row;
