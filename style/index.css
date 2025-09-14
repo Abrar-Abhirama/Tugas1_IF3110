@@ -140,7 +140,7 @@ body {
 
 /* Education */
 .education {
-    background-color: rgb(66, 70, 69);
+    background-color: rgb(50, 50, 50);
     width: 100%;
     height: 100%;
     padding: 0px;
@@ -158,7 +158,7 @@ body {
 }
 
 .list-education {
-    background-color: aqua;
+    background-color: rgb(50, 50, 50);
     height: 60%;
     width: 70%;
     display: flex;
@@ -169,22 +169,53 @@ body {
 }
 
 .highschool {
-    background-color: rgb(13, 31, 31);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 10px;  */
     height: 80%;
     width: 40%;
+    box-sizing: border-box;
 }
 
+.college {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 10px;  */
+    height: 80%;
+    width: 40%;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 60%;
+    height: 60%px;
+    object-fit: contain;
+    margin-bottom: 0; 
+}
+
+.education p {
+    color: white;
+}
 .section-divider {
     width: 18%;        
     border: none;
-    border-top: 2px solid #000000; 
+    border-top: 2px solid #ffffff; 
     margin: 16px auto; 
 }
-.college {
+/* .college {
     background-color: rgb(66, 68, 68);
     height: 80%;
     width: 40%;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+} */
 
 /* Experience */
 .Experience {
